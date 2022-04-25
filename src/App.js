@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
-import Player from "./components/Player";
+import Form from './components/Form'
+// import Player from "./components/Player";
 import "./App.css";
 
 export default class App extends React.Component {
@@ -10,12 +11,12 @@ export default class App extends React.Component {
   }
 
   render() {
-    const data = [{ key: "1", name: "Petya" },
-                { key: "2", name: "vanya" }]
-    var players = [];
-    for (var key in data) {
-      players.push(<Player key={key} name={data[key].name} />);
-    }
+    // const data = [{ key: "1", name: "Petya" },
+    //             { key: "2", name: "vanya" }]
+    // var players = [];
+    // for (var key in data) {
+    //   players.push(<Player key={key} name={data[key].name} />);
+    // }
     return (
       <div className="App">
         <header className="App-header">
@@ -29,8 +30,8 @@ export default class App extends React.Component {
           >
             Learn React
           </a>
-          
-            {players}
+          <Form></Form>
+            {/* {players} */}
           
         </header>
       </div>
